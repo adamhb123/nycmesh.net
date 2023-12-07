@@ -29,12 +29,60 @@ svg {
   color: #777;
 }
 
+.hero {
+  background-image: url("/img/3d2.png");
+  background-position: 53% bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 30em) {
+  .hero {
+    background-image: url("/img/3d9-small.png");
+    background-position: 43% bottom;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .hero {
+    background-image: url("/img/3d9.png");
+    background-position: 40% bottom;
+  }
+}
+
+.pac-item {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.pac-matched {
+  background-color: papayawhip;
+}
+
+.bg-blue-10 {
+  background-color: rgba(0, 122, 255, 0.05);
+}
+
 .top-05 {
   top: 0.125rem;
 }
 
 .left-05 {
   left: 0.125rem;
+}
+
+.bg-white-gradient {
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
 .percentBox {
@@ -50,11 +98,24 @@ svg {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.shadow {
+  box-shadow: rgba(51, 51, 51, 0.125) 0px 16px 32px -4px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+}
+
+.bg-red {
+  background-color: rgb(255, 45, 85);
+}
+
 .absolute--fill-1 {
   top: 20;
   right: 20;
   bottom: 20;
   left: 20;
+}
+
+.animate-width {
+  transition: width 0.3s;
 }
 
 /* Dropdown / Hamburger Nav */
@@ -70,7 +131,7 @@ svg {
 @media screen and (max-width: 40em) {
   .dropdown-content {
     display: none;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
     z-index: 9998;
     left: 0;
@@ -84,8 +145,8 @@ svg {
   }
 
   .dropdown-content a {
-    margin-bottom: 0.5rem;
-    margin-left: 0;
+      margin-bottom: 1rem;
+      margin-left: 0;
   }
 }
 
@@ -106,7 +167,7 @@ svg {
   left: 0;
   height: auto;
   width: auto;
-  z-index: 9997;
+  z-index: 9;
   cursor: default;
 }
 
@@ -186,6 +247,10 @@ svg {
   color: #007aff;
 }
 
+.hover-blue:hover {
+  color: #007aff;
+}
+
 .bg-blue {
   background-color: #007aff;
 }
@@ -200,6 +265,12 @@ svg {
 
 .hover-b--blue:hover {
   border-color: #007aff;
+}
+
+@media screen and (max-height: 700px) and (max-width: 30em) {
+  .splash {
+    height: calc(100vh - 64px);
+  }
 }
 
 .splash-blog {

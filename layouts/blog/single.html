@@ -1,4 +1,25 @@
 {{ define "main" }}
+<<<<<<< HEAD
+<main class="sans-serif bg-near-white pb5 ph4-ns ph3-m">
+	<div class="mw7 pv4 center flex justify-between items-center">
+		<a href="/blog" class="f2 gray fw2 mv0 link hover-dark-gray">Blog</a>
+	</div>
+	<div class="lh-copy dark-gray f5 center mw7 bg-white pb5 ph6-l ph5-m ph3 ba b--light-gray">
+		<div
+			class="mb5 flex flex-column tc items-center justify-center">
+			<img
+				src="/img/authors/{{ .Params.Author }}.jpg"
+				class="bg-light-gray h3 w3 br-pill ba b--light-gray mb4"
+				style="margin-top: -2rem;"
+			/>
+			<div>
+				<h1 href="{{.Permalink}}" class="mv0 f3 fw5">
+					{{ .Title }}
+				</h1>
+				<p class="ma0 fw4 gray">
+					{{ .Params.author }} on {{ .Date.Format "January 2, 2006" }}
+				</p>
+=======
 <main class="bg-white">
 	<div class="splash-small cover"></div>
 	<div class="ph4-ns ph3 pv4">
@@ -22,7 +43,12 @@
 
 			<div class="f5">
 				{{ .Content }}
+>>>>>>> master
 			</div>
+		</div>
+
+		<div class="dark-gray center f6">
+			{{ .Content }}
 		</div>
 	</div>
 </main>
